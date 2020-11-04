@@ -54,7 +54,7 @@
                 </div><!-- end recently review -->
             </div>
 
-            <aside class="right-sidebar flex flex-row lg:flex-col w-full items-center justify-between lg:w-1/4 mt-8 lg:mt-0  px-8 lg:mx-0 ">
+            <aside class="right-sidebar flex flex-row lg:flex-col w-full items-end justify-between lg:w-1/4 mt-8 lg:mt-0 px-4 lg:mx-0 ">
                 
                 <div class="most-anticiapted-container space-y-10 mb-0 lg:mb-8">
                     <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Most Anticiapted</h2>
