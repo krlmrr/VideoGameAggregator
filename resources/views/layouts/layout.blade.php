@@ -9,19 +9,19 @@
 
     <body class="bg-gray-900 text-white">
         <header class="border-b border-gray-800">
-            <nav class="container mx-auto flex items-center justify-between px-4 py-6">
-                <div class="flex items-center">
+            <nav class="container mx-auto flex flex-col lg:flex-row items-center justify-between px-4 py-6">
+                <div class="flex flex-col lg:flex-row items-center">
                     <a href="/">
                         <p class="w-32"> {{ env('APP_NAME')}}</p>
                         {{-- <img src="" alt="{{ env('APP_NAME')}}" class="w-32 flex-none"> --}}
                     </a>
-                    <ul class="flex items-center ml-16 space-x-8">
+                    <ul class="flex items-center ml-0 lg:ml-16 space-x-8 mt-6 lg:mt-0">
                         <li><a class="hover:text-gray-400" href="#">Games</a></li>
                         <li><a class="hover:text-gray-400" href="#">Review </a></li>
                         <li><a class="hover:text-gray-400" href="#">Coming Soon</a></li>
                     </ul>
                 </div>
-                <div class="flex items-center">
+                <div class="flex items-center mt-6 lg:mt-0">
                     <div class="relative">
                         <input type="text" class="bg-gray-800 text-sm rounded-full px-4 py-1 w-64 pl-8 focus:outline-none focus:shadow-outline" placeholder="Search..." name="" id="">
                         <div class="absolute top-0 flex items-center ml-2 mt-1">

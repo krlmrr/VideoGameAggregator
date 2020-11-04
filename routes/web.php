@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('index');
 });
 
+Route::get('/game', function () {
+    return view('show');
+});
+
 Route::get('/laravel', function () {
     return view('welcome');
 });
