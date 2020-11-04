@@ -7,7 +7,7 @@
 @section('content')
     <div class="container mx-auto px-4">
         <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Popular Games</h2>
-        <div class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
+        <div class="popular-games text-sm grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12 border-b border-gray-800 pb-16">
             @for ($i = 1; $i <= 12; $i++)
                 <div class="game mx-auto mt-8">
                     <div class="relative inline-block">
@@ -54,9 +54,10 @@
                 </div><!-- end recently review -->
             </div>
 
-            <aside class="right-sidebar w-full lg:w-1/4 mt-8 lg:mt-0">
-                <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Most Anticiapted</h2>
-                <div class="most-anticiapted-container space-y-10 mt-8 mb-8">
+            <aside class="right-sidebar flex flex-row lg:flex-col w-full items-center justify-between lg:w-1/4 mt-8 lg:mt-0  px-8 lg:mx-0 ">
+                
+                <div class="most-anticiapted-container space-y-10 mb-0 lg:mb-8">
+                    <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Most Anticiapted</h2>
                     @for($i=1; $i <= 4; $i++)
                         <div class="game flex">
                             <a href="/game">
@@ -70,9 +71,9 @@
                         </div> <!-- end game -->
                     @endfor
                 </div>
-    
-                <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Coming Soon</h2>
-                <div class="most-anticiapted-container space-y-10 mt-8">
+                
+                <div class="most-anticiapted-container space-y-10">
+                    <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Coming Soon</h2>
                     @for($i=1; $i <= 4; $i++)
                         <div class="game mx-auto flex">
                             <a href="/game">

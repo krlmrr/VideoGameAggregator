@@ -56,8 +56,8 @@
         </main>
 
         <footer class="border-t border-gray-800">
-            <div class="container mx-auto px-4 py-6 flex items-center justify-between">
-                <p>
+            <div class="container mx-auto px-6 py-6 flex-none lg:flex items-center justify-between">
+                <p class="mb-4 lg:mb-0">
                     Powered by <a class="underline hover:text-gray-400" href="">IGDB</a>
                 </p>
                 <p>
