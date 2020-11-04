@@ -14,11 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    return view('games.index');
 });
 
 Route::get('/game', function () {
-    return view('show');
+    return view('games.show');
 });
 
 Route::get('/laravel', function () {

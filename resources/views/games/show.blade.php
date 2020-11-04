@@ -20,20 +20,22 @@
                     <span>PS4</span>
                 </div>
                 <div class="flex flex-wrap items-center mt-8">
-                    <div class="flex items-center">
-                        <div class="w-16 h-16 bg-gray-800 rounded-full">
-                            <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
+                    <div class="flex mx-auto lg:mx-0 px-2 lg:px-0 flex-wrap">
+                        <div class="flex items-center">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full">
+                                <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
+                            </div>
+                            <p class="ml-4 text-xs">Member <br> Score</p>
                         </div>
-                        <p class="ml-4 text-xs">Member <br> Score</p>
-                    </div>
-                    <div class="flex items-center ml-12">
-                        <div class="w-16 h-16 bg-gray-800 rounded-full">
-                            <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
+                        <div class="flex items-center ml-6 lg:ml-10">
+                            <div class="w-16 h-16 bg-gray-800 rounded-full">
+                                <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
+                            </div>
+                            <p class="ml-4 text-xs">Critic <br> Score</p>
                         </div>
-                        <p class="ml-4 text-xs">Critic <br> Score</p>
                     </div>
                     
-                    <div class="flex items-center space-x-4 mx-auto lg:ml-12 mt-4 lg:mt-0"><!-- social -->
+                    <div class="flex items-center space-x-4 mx-auto lg:mx-8 px-8 mt-4 lg:mt-0"><!-- social -->
 
                         <div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center"><!-- web -->
                             <a href="#" class="hover:text-gray-400">
