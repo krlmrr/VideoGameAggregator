@@ -6,12 +6,12 @@
 
 @section('content')
     <div class="container mx-auto px-4">
-        <div class="game-details border-b border-gray-800 pb-12 flex">
-            <div class="flex-none">
+        <div class="game-details border-b border-gray-800 pb-12 flex flex-col lg:flex-row">
+            <div class="flex-none mx-auto ">
                 <img src="/assets/resident.jpg" alt="cover image">
             </div>
-            <div class="ml-12">
-                <h1 class="font-semibold text-4xl">Resident Evil 3</h1>
+            <div class="ml-0 lg:ml-12">
+                <h1 class="font-semibold text-4xl mt-4 lg:mt-0 leading-tight">Final Fantasy VII Remake</h1>
                 <div class="text-gray-400">
                     <span>Survival Horror</span>
                     &middot;
@@ -24,16 +24,16 @@
                         <div class="w-16 h-16 bg-gray-800 rounded-full">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
                         </div>
-                        <div class="ml-4 text-xs">Member <br> Score</div>
+                        <p class="ml-4 text-xs">Member <br> Score</p>
                     </div>
                     <div class="flex items-center ml-12">
                         <div class="w-16 h-16 bg-gray-800 rounded-full">
                             <div class="font-semibold text-xs flex justify-center items-center h-full">90%</div>
                         </div>
-                        <div class="ml-4 text-xs">Critic <br> Score</div>
+                        <p class="ml-4 text-xs">Critic <br> Score</p>
                     </div>
                     
-                    <div class="flex items-center space-x-4 ml-12"><!-- social -->
+                    <div class="flex items-center space-x-4 mx-auto lg:ml-12 mt-4 lg:mt-0"><!-- social -->
 
                         <div class="w-8 h-8 bg-gray-800 rounded-full flex justify-center items-center"><!-- web -->
                             <a href="#" class="hover:text-gray-400">
@@ -75,7 +75,7 @@
 
         <div class="image-container border-b border-gray-800 pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Images</h2>
-            <div class="grid grid-cols-3 gap-12 mt-8 ">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mt-8 ">
                 @for($i = 1; $i <= 6; $i++)
                     <div>
                         <a href="#">
@@ -88,7 +88,7 @@
 
         <div class="simular-games-container pb-12 mt-8">
             <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Simular Games</h2>
-            <div class="popular-games text-sm grid grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
+            <div class="popular-games text-sm grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 xl:grid-cols-6 gap-12">
                 @for ($i = 1; $i <= 6; $i++)
                     <div class="game mx-auto mt-8">
                         <div class="relative inline-block">
