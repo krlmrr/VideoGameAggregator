@@ -34,9 +34,9 @@
         </div> <!-- end popular games -->
         <div class="flex flex-col lg:flex-row my-10">
             <div class="recently-reviewed w-full lg:w-3/4 mr-0 lg:mr-32">
-                <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Recently Reviewed</h2>
+                <h2 class="text-blue-500 uppercase tracking-wide font-semibold">Recently Released</h2>
                 <div class="recently-reviewed-container space-y-12 mt-8">
-                    @foreach ($recentlyReviewed as $game)
+                    @foreach ($recentlyReleased as $game)
                         <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
                             <div class="relative flex-none">
                                 <a href="#">
