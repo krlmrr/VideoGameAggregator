@@ -16,6 +16,7 @@ class GamesController extends Controller
     public function index() {
         $before = Carbon::now()->subMonths(12)->timestamp;
         $current = Carbon::now()->timestamp;
+        $soon = Carbon::now()->addMonths(2)->timestamp;
         $after = Carbon::now()->addMonths(12)->timestamp;
 
         $popularGames = Http::withHeaders(config('services.igdb'))
@@ -72,8 +73,8 @@ class GamesController extends Controller
                     fields name, cover.url, first_release_date, total_rating_count, total_rating, platforms.abbreviation, rating, rating_count, summary, hypes;
 
                     where platforms = (45,48,49,130,165,163,6) 
-                        & (first_release_date > {$current})
-                        & hypes > 50
+                        & (first_release_date > {$current} & first_release_date < {$soon})
+                        & hypes > 10
                     ;
 
                     sort first_release_date asc;
