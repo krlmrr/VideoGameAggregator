@@ -1,5 +1,5 @@
 <div wire:init='loadRecentlyReleased' class="recently-reviewed-container space-y-12 mt-8">
-    @foreach ($recentlyReleased as $game)
+    @forelse ($recentlyReleased as $game)
         <div class="game bg-gray-800 rounded-lg shadow-md flex px-6 py-6">
             <div class="relative flex-none">
                 <a href="#">
@@ -25,5 +25,7 @@
                 </p>
             </div>
         </div> <!-- end game -->
-    @endforeach
+        @empty
+            <div class="spinner mt-8"></div>
+    @endforelse
 </div>
